@@ -436,6 +436,86 @@
             height: 100%;
             border: none;
         }
+
+        /* Undertale Yellow Overlay */
+        #undertale-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: black;
+            z-index: 1000;
+        }
+
+        #undertale-overlay.active {
+            display: block;
+        }
+
+        #undertale-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: #66bb6a;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 8px;
+            z-index: 1001;
+        }
+
+        #undertale-close:hover {
+            background: #4CAF50;
+        }
+
+        #undertale-frame {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Deltarune Overlay */
+        #deltarune-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: black;
+            z-index: 1000;
+        }
+
+        #deltarune-overlay.active {
+            display: block;
+        }
+
+        #deltarune-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: #66bb6a;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 8px;
+            z-index: 1001;
+        }
+
+        #deltarune-close:hover {
+            background: #4CAF50;
+        }
+
+        #deltarune-frame {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
     </style>
 </head>
 <body>
@@ -476,31 +556,31 @@
             <div class="game-grid">
                 <div class="game-card" onclick="openRagdollHit()" style="cursor: pointer;">
                     <h3>🎯 Play Ragdoll Hit</h3>
-                    <p>Launch ragdolls and watch the physics chaos unfold. Click to play now!</p>
+                    <p>Click to play now!</p>
                 </div>
                 <div class="game-card" onclick="openFlightSim()" style="cursor: pointer;">
                     <h3>✈️ Play Flight Simulator</h3>
-                    <p>Take to the skies in this exciting flight simulation game. Click to play now!</p>
+                    <p>Click to play now!</p>
                 </div>
-                <div class="game-card">
-                    <h3>🏆 Competitive League</h3>
-                    <p>Climb the ranks with our competitive squads. Team-based strategy games and ranked matches daily.</p>
+                <div class="game-card" onclick="openUndertaleYellow()" style="cursor: pointer;">
+                    <h3>💛 Play Undertale Yellow</h3>
+                    <p>Click to play now!</p>
                 </div>
                 <div class="game-card" onclick="openRagdollArchers()" style="cursor: pointer;">
                     <h3>🏹 Play Ragdoll Archers</h3>
-                    <p>Compete in hilarious ragdoll archery battles. Click to play now!</p>
+                    <p>Click to play now!</p>
                 </div>
-                <div class="game-card">
-                    <h3>🎲 Casual Corner</h3>
-                    <p>Relax and have fun with party games, indie titles, and weekly game nights with the community.</p>
+                <div class="game-card" onclick="openDeltarune()" style="cursor: pointer;">
+                    <h3>❤️ Play Deltarune</h3>
+                    <p>Embark on an unforgettable RPG adventure in the Dark World. Click to play now!</p>
                 </div>
                 <div class="game-card" onclick="openRooftopSnipers()" style="cursor: pointer;">
                     <h3>🎯 Play Rooftop Snipers</h3>
-                    <p>Battle it out on the rooftops in this intense sniper duel game. Click to play now!</p>
+                    <p>Click to play now!</p>
                 </div>
                 <div class="game-card" onclick="openFallout()" style="cursor: pointer;">
                     <h3>☢️ Play Fallout</h3>
-                    <p>Experience the classic post-apocalyptic RPG right in your browser. Click to launch!</p>
+                    <p> Click to play now!</p>
                 </div>
             </div>
         </div>
@@ -567,6 +647,18 @@
     <div id="rooftop-overlay">
         <button id="rooftop-close" onclick="closeRooftopSnipers()">✕ Close Game</button>
         <iframe id="rooftop-frame"></iframe>
+    </div>
+
+    <!-- Undertale Yellow Game Overlay -->
+    <div id="undertale-overlay">
+        <button id="undertale-close" onclick="closeUndertaleYellow()">✕ Close Game</button>
+        <iframe id="undertale-frame"></iframe>
+    </div>
+
+    <!-- Deltarune Game Overlay -->
+    <div id="deltarune-overlay">
+        <button id="deltarune-close" onclick="closeDeltarune()">✕ Close Game</button>
+        <iframe id="deltarune-frame"></iframe>
     </div>
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/bubbls/dosbox/js/es6-promise.js"></script>
@@ -814,6 +906,124 @@
         function closeRooftopSnipers() {
             document.getElementById('rooftop-overlay').classList.remove('active');
             document.getElementById('rooftop-frame').srcdoc = '';
+        }
+
+        function openUndertaleYellow() {
+            const overlay = document.getElementById('undertale-overlay');
+            const iframe = document.getElementById('undertale-frame');
+            
+            // Due to the complexity of Undertale Yellow, we'll load it via direct URL
+            // This is a simplified approach for the web environment
+            const message = document.createElement('div');
+            message.style.cssText = 'position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(0,0,0,0.9); color: white; padding: 40px; border-radius: 15px; text-align: center; z-index: 10000; max-width: 500px;';
+            message.innerHTML = `
+                <h2 style="margin-bottom: 20px;">💛 Undertale Yellow</h2>
+                <p style="margin-bottom: 20px;">This game is very large and requires special loading. Preparing Emulator</p>
+                <div style="width: 100%; height: 4px; background: #333; border-radius: 2px; overflow: hidden;">
+                    <div id="uty-progress" style="width: 0%; height: 100%; background: #ffeb3b; transition: width 0.3s;"></div>
+                </div>
+            `;
+            document.body.appendChild(message);
+            
+            const progressBar = document.getElementById('uty-progress');
+            let progress = 0;
+            const progressInterval = setInterval(() => {
+                progress += Math.random() * 15;
+                if (progress > 90) progress = 90;
+                progressBar.style.width = progress + '%';
+            }, 300);
+            
+            // Create a simplified iframe with the essential Undertale Yellow code
+            setTimeout(() => {
+                progressBar.style.width = '100%';
+                setTimeout(() => {
+                    message.remove();
+                    
+                    const gameHTML = '<html><head><base href="https://cdn.jsdelivr.net/gh/1e295a49108e716ce8ab7eba0c8dca7d/9326265e4f1b14345a3bdab6f8ffad0e2e7ab3fda920c5f0f095f77359af00aeae22591c5bc4914c84c13d99eb62091d7ce7@main/utyweb/"><meta charset="utf-8"><title>UNDERTALE Yellow</title><link rel="stylesheet" href="uty.css"><script src="jszip.min.js"><\/script><\/head><body oncontextmenu="return false;"><div id="game-container"><canvas class="emscripten" id="canvas" tabindex="-1"><\/canvas><div class="loading"><div class="spinner" id="spinner"><\/div><div class="emscripten" id="status">Loading...<\/div><progress value="0" max="100" id="progress" hidden="1"><\/progress><\/div><\/div><script>alert("Loading Undertale Yellow... This may take a while!");function mergeFiles(e){return new Promise(((t,n)=>{let r=[];function s(o){if(o>=e.length){const e=new Blob(r,{type:"application/octet-stream"});return void t(e)}fetch(e[o]).then((e=>{if(!e.ok)throw new Error(`Failed to fetch ${e[o]}`);return e.arrayBuffer()})).then((e=>{r.push(e),s(o+1)})).catch(n)}s(0)}))}function getParts(e,t){let n=[];for(let r=1;r<=t;r++)n.push(`${e}.part${r}`);return n}mergeFiles(getParts("game.unx",10)).then((e=>{const t=URL.createObjectURL(e),n=window.fetch;window.fetch=async function(e,...r){return e.endsWith("game.unx")?n(t,...r):n(e,...r)};const r=XMLHttpRequest.prototype.open;XMLHttpRequest.prototype.open=function(e,n,...s){return n.includes("game.unx")&&(n=t),r.call(this,e,n,...s)};const s=document.createElement("script");s.src="runner.js",document.body.appendChild(s)})).catch((e=>console.error("Failed to merge parts:",e)));<\/script><\/body><\/html>';
+                    
+                    iframe.srcdoc = gameHTML;
+                    overlay.classList.add('active');
+                }, 500);
+            }, 2000);
+        }
+
+        function closeUndertaleYellow() {
+            document.getElementById('undertale-overlay').classList.remove('active');
+            document.getElementById('undertale-frame').srcdoc = '';
+        }
+
+        function openDeltarune() {
+            const overlay = document.getElementById('deltarune-overlay');
+            const iframe = document.getElementById('deltarune-frame');
+            
+            const gameHTML = `
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deltarune</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: black;
+            overflow: hidden;
+        }
+        #loading-message {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="loading-message">Loading Deltarune... Please wait...</div>
+    <script>
+        (function launch() {
+            try {
+                fetch("https://cdn.jsdelivr.net/gh/regedit-sys/web-port@main/deltarune/free.html?t=" + Date.now())
+                    .then(response => response.text())
+                    .then(html => {
+                        document.getElementById('loading-message').style.display = 'none';
+                        document.documentElement.innerHTML = html;
+                        
+                        document.documentElement.querySelectorAll('script').forEach(oldScript => {
+                            const newScript = document.createElement('script');
+                            if (oldScript.src) {
+                                newScript.src = oldScript.src;
+                            } else {
+                                newScript.textContent = oldScript.textContent;
+                            }
+                            document.body.appendChild(newScript);
+                        });
+                    })
+                    .catch(error => {
+                        console.error('Error loading Deltarune:', error);
+                        document.getElementById('loading-message').textContent = 'Failed to load Deltarune. Please try again.';
+                    });
+            } catch (error) {
+                console.error('Error:', error);
+                document.getElementById('loading-message').textContent = 'Failed to load Deltarune. Please try again.';
+            }
+        })();
+    <\/script>
+</body>
+</html>
+            `;
+            
+            iframe.srcdoc = gameHTML;
+            overlay.classList.add('active');
+        }
+
+        function closeDeltarune() {
+            document.getElementById('deltarune-overlay').classList.remove('active');
+            document.getElementById('deltarune-frame').srcdoc = '';
         }
 
         function openFlightSim() {
