@@ -19,7 +19,6 @@
             overflow-x: hidden;
         }
 
-        /* Jungle vine decorations */
         .vine-bg {
             position: fixed;
             width: 100%;
@@ -187,6 +186,7 @@
             border: 2px solid #2e7d32;
             transition: all 0.3s ease;
             box-shadow: 0 4px 15px rgba(46, 125, 50, 0.2);
+            cursor: pointer;
         }
 
         .game-card:hover {
@@ -216,8 +216,7 @@
             font-size: 1rem;
         }
 
-        /* Fallout Game Overlay */
-        #fallout-overlay {
+        .game-overlay {
             display: none;
             position: fixed;
             top: 0;
@@ -228,11 +227,11 @@
             z-index: 1000;
         }
 
-        #fallout-overlay.active {
+        .game-overlay.active {
             display: block;
         }
 
-        #fallout-close {
+        .close-btn {
             position: absolute;
             top: 20px;
             right: 20px;
@@ -246,39 +245,17 @@
             z-index: 1001;
         }
 
-        #fallout-close:hover {
+        .close-btn:hover {
             background: #4CAF50;
         }
 
-        #fallout-loading {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            font-family: monospace;
-            font-size: 20px;
-            color: #fedb1d;
-        }
-
-        #fallout-progress {
-            margin-top: 20px;
-            font-size: 16px;
-        }
-
-        #fallout-canvas {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: auto;
+        .game-frame {
+            width: 100%;
             height: 100%;
-            background: black;
-            transform: translate(-50%, -50%);
-            display: none;
+            border: none;
         }
 
-        /* Ragdoll Hit Overlay */
-        #ragdoll-overlay {
+        #nfs-overlay {
             display: none;
             position: fixed;
             top: 0;
@@ -289,11 +266,11 @@
             z-index: 1000;
         }
 
-        #ragdoll-overlay.active {
+        #nfs-overlay.active {
             display: block;
         }
 
-        #ragdoll-close {
+        #nfs-close {
             position: absolute;
             top: 20px;
             right: 20px;
@@ -307,18 +284,17 @@
             z-index: 1001;
         }
 
-        #ragdoll-close:hover {
+        #nfs-close:hover {
             background: #4CAF50;
         }
 
-        #ragdoll-frame {
+        #nfs-frame {
             width: 100%;
             height: 100%;
             border: none;
         }
 
-        /* Ragdoll Archers Overlay */
-        #archers-overlay {
+        #nfs-carbon-overlay {
             display: none;
             position: fixed;
             top: 0;
@@ -329,11 +305,11 @@
             z-index: 1000;
         }
 
-        #archers-overlay.active {
+        #nfs-carbon-overlay.active {
             display: block;
         }
 
-        #archers-close {
+        #nfs-carbon-close {
             position: absolute;
             top: 20px;
             right: 20px;
@@ -347,18 +323,17 @@
             z-index: 1001;
         }
 
-        #archers-close:hover {
+        #nfs-carbon-close:hover {
             background: #4CAF50;
         }
 
-        #archers-frame {
+        #nfs-carbon-frame {
             width: 100%;
             height: 100%;
             border: none;
         }
 
-        /* Flight Simulator Overlay */
-        #flight-overlay {
+        #nfs-underground2-overlay {
             display: none;
             position: fixed;
             top: 0;
@@ -369,11 +344,11 @@
             z-index: 1000;
         }
 
-        #flight-overlay.active {
+        #nfs-underground2-overlay.active {
             display: block;
         }
 
-        #flight-close {
+        #nfs-underground2-close {
             position: absolute;
             top: 20px;
             right: 20px;
@@ -387,18 +362,17 @@
             z-index: 1001;
         }
 
-        #flight-close:hover {
+        #nfs-underground2-close:hover {
             background: #4CAF50;
         }
 
-        #flight-frame {
+        #nfs-underground2-frame {
             width: 100%;
             height: 100%;
             border: none;
         }
 
-        /* Rooftop Snipers Overlay */
-        #rooftop-overlay {
+        #ace-combat-overlay {
             display: none;
             position: fixed;
             top: 0;
@@ -409,11 +383,11 @@
             z-index: 1000;
         }
 
-        #rooftop-overlay.active {
+        #ace-combat-overlay.active {
             display: block;
         }
 
-        #rooftop-close {
+        #ace-combat-close {
             position: absolute;
             top: 20px;
             right: 20px;
@@ -427,18 +401,17 @@
             z-index: 1001;
         }
 
-        #rooftop-close:hover {
+        #ace-combat-close:hover {
             background: #4CAF50;
         }
 
-        #rooftop-frame {
+        #ace-combat-frame {
             width: 100%;
             height: 100%;
             border: none;
         }
 
-        /* Undertale Yellow Overlay */
-        #undertale-overlay {
+        #ages-conflict-overlay {
             display: none;
             position: fixed;
             top: 0;
@@ -449,11 +422,11 @@
             z-index: 1000;
         }
 
-        #undertale-overlay.active {
+        #ages-conflict-overlay.active {
             display: block;
         }
 
-        #undertale-close {
+        #ages-conflict-close {
             position: absolute;
             top: 20px;
             right: 20px;
@@ -467,18 +440,17 @@
             z-index: 1001;
         }
 
-        #undertale-close:hover {
+        #ages-conflict-close:hover {
             background: #4CAF50;
         }
 
-        #undertale-frame {
+        #ages-conflict-frame {
             width: 100%;
             height: 100%;
             border: none;
         }
 
-        /* Deltarune Overlay */
-        #deltarune-overlay {
+        #decision-medieval-overlay {
             display: none;
             position: fixed;
             top: 0;
@@ -489,11 +461,11 @@
             z-index: 1000;
         }
 
-        #deltarune-overlay.active {
+        #decision-medieval-overlay.active {
             display: block;
         }
 
-        #deltarune-close {
+        #decision-medieval-close {
             position: absolute;
             top: 20px;
             right: 20px;
@@ -507,11 +479,50 @@
             z-index: 1001;
         }
 
-        #deltarune-close:hover {
+        #decision-medieval-close:hover {
             background: #4CAF50;
         }
 
-        #deltarune-frame {
+        #decision-medieval-frame {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        #eaglercraft-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: black;
+            z-index: 1000;
+        }
+
+        #eaglercraft-overlay.active {
+            display: block;
+        }
+
+        #eaglercraft-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: #66bb6a;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 8px;
+            z-index: 1001;
+        }
+
+        #eaglercraft-close:hover {
+            background: #4CAF50;
+        }
+
+        #eaglercraft-frame {
             width: 100%;
             height: 100%;
             border: none;
@@ -528,6 +539,7 @@
                 <a href="#" onclick="showSection('home')">Home</a>
                 <a href="#" onclick="showSection('gaming')">Gaming</a>
                 <a href="#" onclick="showSection('partners')">Partners</a>
+                <a href="#" onclick="showSection('settings')">Settings</a>
                 <a href="https://discord.gg/5GmrCaAN" target="_blank" class="discord-btn">
                     <svg class="discord-icon" viewBox="0 0 127.14 96.36" xmlns="http://www.w3.org/2000/svg">
                         <path fill="#4CAF50" d="M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83A97.68,97.68,0,0,0,49,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.79,32.65-1.71,56.6.54,80.21h0A105.73,105.73,0,0,0,32.71,96.36,77.7,77.7,0,0,0,39.6,85.25a68.42,68.42,0,0,1-10.85-5.18c.91-.66,1.8-1.34,2.66-2a75.57,75.57,0,0,0,64.32,0c.87.71,1.76,1.39,2.66,2a68.68,68.68,0,0,1-10.87,5.19,77,77,0,0,0,6.89,11.1A105.25,105.25,0,0,0,126.6,80.22h0C129.24,52.84,122.09,29.11,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53s5-12.74,11.43-12.74S54,46,53.89,53,48.84,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.25,60,73.25,53s5-12.74,11.44-12.74S96.23,46,96.12,53,91.08,65.69,84.69,65.69Z"/>
@@ -554,33 +566,61 @@
             <p>Enjoy Our Games!</p>
             
             <div class="game-grid">
-                <div class="game-card" onclick="openRagdollHit()" style="cursor: pointer;">
+                <div class="game-card" onclick="alert('Game loading functionality ready - awaiting your instructions!')">
                     <h3>Play Ragdoll Hit</h3>
                     <p>Click to play now!</p>
                 </div>
-                <div class="game-card" onclick="openFlightSim()" style="cursor: pointer;">
+                <div class="game-card" onclick="alert('Game loading functionality ready - awaiting your instructions!')">
                     <h3>Play Flight Simulator</h3>
                     <p>Click to play now!</p>
                 </div>
-                <div class="game-card" onclick="openUndertaleYellow()" style="cursor: pointer;">
+                <div class="game-card" onclick="alert('Game loading functionality ready - awaiting your instructions!')">
                     <h3>Play Undertale Yellow</h3>
                     <p>Click to play now!</p>
                 </div>
-                <div class="game-card" onclick="openRagdollArchers()" style="cursor: pointer;">
+                <div class="game-card" onclick="alert('Game loading functionality ready - awaiting your instructions!')">
                     <h3>Play Ragdoll Archers</h3>
                     <p>Click to play now!</p>
                 </div>
-                <div class="game-card" onclick="openDeltarune()" style="cursor: pointer;">
+                <div class="game-card" onclick="alert('Game loading functionality ready - awaiting your instructions!')">
                     <h3>Play Deltarune</h3>
                     <p>Click to play now!</p>
                 </div>
-                <div class="game-card" onclick="openRooftopSnipers()" style="cursor: pointer;">
+                <div class="game-card" onclick="alert('Game loading functionality ready - awaiting your instructions!')">
                     <h3>Play Rooftop Snipers</h3>
                     <p>Click to play now!</p>
                 </div>
-                <div class="game-card" onclick="openFallout()" style="cursor: pointer;">
+                <div class="game-card" onclick="alert('Game loading functionality ready - awaiting your instructions!')">
                     <h3>Play Fallout</h3>
-                    <p> Click to play now!</p>
+                    <p>Click to play now!</p>
+                </div>
+                <div class="game-card" onclick="openNeedForSpeed()">
+                    <h3>Play Need for Speed: Most Wanted</h3>
+                    <p>Click to play now!</p>
+                </div>
+                <div class="game-card" onclick="openNFSCarbon()">
+                    <h3>Play NFS Carbon: Own the City</h3>
+                    <p>Click to play now!</p>
+                </div>
+                <div class="game-card" onclick="openNFSUnderground2()">
+                    <h3>Play NFS Underground 2</h3>
+                    <p>Click to play now!</p>
+                </div>
+                <div class="game-card" onclick="openAceCombat3()">
+                    <h3>Play Ace Combat 3</h3>
+                    <p>Click to play now!</p>
+                </div>
+                <div class="game-card" onclick="openAgesOfConflict()">
+                    <h3>Play Ages of Conflict</h3>
+                    <p>Click to play now!</p>
+                </div>
+                <div class="game-card" onclick="openDecisionMedieval()">
+                    <h3>Play Decision Medieval</h3>
+                    <p>Click to play now!</p>
+                </div>
+                <div class="game-card" onclick="openEaglercraft()">
+                    <h3>Play Eaglercraft (Minecraft)</h3>
+                    <p>Click to play now!</p>
                 </div>
             </div>
         </div>
@@ -609,62 +649,66 @@
                 <p style="color: #c8e6c9; font-size: 1.1rem;">We're looking for partners, specifically other ubg sites go to discord to request a partnership!!!</p>
             </div>
         </div>
+
+        <div id="settings" class="content-section">
+            <h2>⚙️ Settings</h2>
+            <p>Configure your Vines experience</p>
+            
+            <div style="margin-top: 2rem; padding: 2rem; background: rgba(13, 31, 18, 0.6); border-radius: 15px; border: 2px solid #2e7d32;">
+                <h3 style="color: #66bb6a; font-size: 1.8rem; margin-bottom: 1rem;">🔒 About:Blank Cloaking</h3>
+                <p style="color: #c8e6c9; font-size: 1.1rem; margin-bottom: 1.5rem;">Open Vines in a new about:blank window for privacy. This hides the URL from showing in your browser's address bar.</p>
+                <button onclick="openAboutBlank()" style="background: #66bb6a; color: white; padding: 15px 30px; border: none; border-radius: 10px; font-size: 1.1rem; cursor: pointer; font-weight: bold; box-shadow: 0 4px 15px rgba(102, 187, 106, 0.3); transition: all 0.3s ease;">
+                    Open in About:Blank
+                </button>
+            </div>
+        </div>
     </main>
 
     <footer>
         <p>© 2024 Vines Gaming Community. All rights reserved. 🌿</p>
     </footer>
 
-    <!-- Fallout Game Overlay -->
-    <div id="fallout-overlay">
-        <button id="fallout-close" onclick="closeFallout()">✕ Close Game</button>
-        <div id="fallout-loading">
-            <div>Loading Fallout...</div>
-            <div id="fallout-progress">Merging archive parts: 0%</div>
-        </div>
-        <canvas id="fallout-canvas" onClick="window.focus();" />
+    <!-- Need for Speed Most Wanted Overlay -->
+    <div id="nfs-overlay">
+        <button id="nfs-close" onclick="closeNeedForSpeed()">✕ Close Game</button>
+        <iframe id="nfs-frame"></iframe>
     </div>
 
-    <!-- Ragdoll Hit Game Overlay -->
-    <div id="ragdoll-overlay">
-        <button id="ragdoll-close" onclick="closeRagdollHit()">✕ Close Game</button>
-        <iframe id="ragdoll-frame"></iframe>
+    <!-- NFS Carbon Own the City Overlay -->
+    <div id="nfs-carbon-overlay">
+        <button id="nfs-carbon-close" onclick="closeNFSCarbon()">✕ Close Game</button>
+        <iframe id="nfs-carbon-frame"></iframe>
     </div>
 
-    <!-- Ragdoll Archers Game Overlay -->
-    <div id="archers-overlay">
-        <button id="archers-close" onclick="closeRagdollArchers()">✕ Close Game</button>
-        <iframe id="archers-frame"></iframe>
+    <!-- NFS Underground 2 Overlay -->
+    <div id="nfs-underground2-overlay">
+        <button id="nfs-underground2-close" onclick="closeNFSUnderground2()">✕ Close Game</button>
+        <iframe id="nfs-underground2-frame"></iframe>
     </div>
 
-    <!-- Flight Simulator Game Overlay -->
-    <div id="flight-overlay">
-        <button id="flight-close" onclick="closeFlightSim()">✕ Close Game</button>
-        <iframe id="flight-frame"></iframe>
+    <!-- Ace Combat 3 Overlay -->
+    <div id="ace-combat-overlay">
+        <button id="ace-combat-close" onclick="closeAceCombat3()">✕ Close Game</button>
+        <iframe id="ace-combat-frame"></iframe>
     </div>
 
-    <!-- Rooftop Snipers Game Overlay -->
-    <div id="rooftop-overlay">
-        <button id="rooftop-close" onclick="closeRooftopSnipers()">✕ Close Game</button>
-        <iframe id="rooftop-frame"></iframe>
+    <!-- Ages of Conflict Overlay -->
+    <div id="ages-conflict-overlay">
+        <button id="ages-conflict-close" onclick="closeAgesOfConflict()">✕ Close Game</button>
+        <iframe id="ages-conflict-frame"></iframe>
     </div>
 
-    <!-- Undertale Yellow Game Overlay -->
-    <div id="undertale-overlay">
-        <button id="undertale-close" onclick="closeUndertaleYellow()">✕ Close Game</button>
-        <iframe id="undertale-frame"></iframe>
+    <!-- Decision Medieval Overlay -->
+    <div id="decision-medieval-overlay">
+        <button id="decision-medieval-close" onclick="closeDecisionMedieval()">✕ Close Game</button>
+        <iframe id="decision-medieval-frame"></iframe>
     </div>
 
-    <!-- Deltarune Game Overlay -->
-    <div id="deltarune-overlay">
-        <button id="deltarune-close" onclick="closeDeltarune()">✕ Close Game</button>
-        <iframe id="deltarune-frame"></iframe>
+    <!-- Eaglercraft Overlay -->
+    <div id="eaglercraft-overlay">
+        <button id="eaglercraft-close" onclick="closeEaglercraft()">✕ Close Game</button>
+        <iframe id="eaglercraft-frame"></iframe>
     </div>
-
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/bubbls/dosbox/js/es6-promise.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/bubbls/dosbox/js/browserfs.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/bubbls/dosbox/js/loader.js"></script>
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
     <script>
         function showSection(sectionId) {
@@ -676,706 +720,899 @@
             document.getElementById(sectionId).classList.add('active');
         }
 
-        function openFallout() {
-            document.getElementById('fallout-overlay').classList.add('active');
-            loadAndMergeZipParts();
-        }
-
-        function closeFallout() {
-            document.getElementById('fallout-overlay').classList.remove('active');
-            location.reload(); // Reload to reset the game
-        }
-
-        function openRagdollHit() {
-            const overlay = document.getElementById('ragdoll-overlay');
-            const iframe = document.getElementById('ragdoll-frame');
-            
-            // Create the game HTML content
-            const gameHTML = `
-<!DOCTYPE html>
-<html lang="en-us">
-<head>
-    <base href="https://cdn.jsdelivr.net/gh/bubbls/UGS-Assets@main/ragdoll-hit/">
-    <meta name="robots" content="noindex,nofollow" />
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Ragdoll Hit</title>
-    <script>
-      window.fileMergerConfig = {
-        files: [
-          { name: '959bf1c60308f1c34bf072f43c3c17d4.data.unityweb', parts: 1 },
-          { name: 'f23c0f3f40a28f1adce731399dde22aa.wasm.unityweb', parts: 2 },
-          { name: '3276aa7c11496bcc48eb6908f112f0c3.js.unityweb', parts: 1 },
-        ],
-        basePath: 'Build/',
-        debug: true
-      };  
-    <\/script>
-    <script src="https://cdn.jsdelivr.net/gh/bubbls/UGS-Assets@main/merge.js"><\/script>
-    <script>
-    window.config = {
-        loader: 'unity-2020',
-        debug: false,
-        maxRatio: 24 / 9,
-        minRatio: 9 / 24,
-        title: 'Ragdoll Hit',
-        thumbnail: 'thumbnail.png',
-        numScreenshots: 4,
-        unityVersion: '2022.3.6f1',
-        unityWebglBuildUrl: '',
-        fileSize: 9,
-        cachedDecompressedFileSizes: {
-            '3276aa7c11496bcc48eb6908f112f0c3.js.unityweb': 66682,
-            '959bf1c60308f1c34bf072f43c3c17d4.data.unityweb': 4377721,
-            'f23c0f3f40a28f1adce731399dde22aa.wasm.unityweb': 5105161,
-            'v84.loader.js': 114199,
-        },
-        "metadata": {"poki_template_version":1,"background_color":"#4D4D4D","code_filename":"f23c0f3f40a28f1adce731399dde22aa.wasm.unityweb","company_name":"Ericetto","data_filename":"959bf1c60308f1c34bf072f43c3c17d4.data.unityweb","decompression_fallback":"Brotli","development_player":"false","framework_filename":"3276aa7c11496bcc48eb6908f112f0c3.js.unityweb","height":"600","loader_filename":"v84.loader.js","product_name":"Ragdoll Hit","product_version":"0.1","splash_screen_style":"Dark","unity_version":"2022.3.6f1","use_data_caching":"true","use_threads":"false","use_wasm":"true","use_webgl_1_0":"true","use_webgl_2_0":"true","width":"960"}
-    };
-    <\/script>
-    <script src="MobileDetect.js"><\/script>
-</head>
-<body>
-    <script src="master-loader.js"><\/script>
-</body>
-</html>
-            `;
-            
-            iframe.srcdoc = gameHTML;
-            overlay.classList.add('active');
-        }
-
-        function closeRagdollHit() {
-            document.getElementById('ragdoll-overlay').classList.remove('active');
-            document.getElementById('ragdoll-frame').srcdoc = '';
-        }
-
-        function openRagdollArchers() {
-            const overlay = document.getElementById('archers-overlay');
-            const iframe = document.getElementById('archers-frame');
-            
-            const gameHTML = `
-<!DOCTYPE html>
-<html lang="en-us">
-<head>
-    <script src="https://cdn.jsdelivr.net/gh/laparda14/Ragdoll-archers@62504c9570ea720c6367e7debe1e110c68f77c2d/vs/gameloader-helper.js"><\/script>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>Ragdoll Archers</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bubbls/ruffle@04dd5345a30d6ebf4b0e2cc385568750cd56ed5a/styyyle.css">
-</head>
-<body>
-    <div id="unity-container" class="unity-desktop">
-        <canvas id="unity-canvas"></canvas>
-    </div>
-    <div id="loading-cover">
-        <div id="unity-loading-bar">
-            <div id="unity-logo"><img src="logo.jpeg"></div>
-            <div class="progress-spinner-container">
-                <div class="spinner-left"><img src="spinner.png"></div>
-                <div id="unity-progress-bar-empty">
-                    <div id="unity-progress-bar-full"></div>
-                </div>
-                <div class="spinner-right"><img src="spinner.png"></div>
-            </div>
-        </div>
-    </div>
-    <script>
-        const buildUrl = "Build";
-        const loaderUrl = "https://cdn.jsdelivr.net/gh/bubbls/ruffle@7117cc5006472d782b65d96abd375597d6273242/v11121212.js";
-        const config = {
-            dataUrl: "https://cdn.jsdelivr.net/gh/bubbls/ruffle@04dd5345a30d6ebf4b0e2cc385568750cd56ed5a/6697b6deba8b617c67b69c55dcd07cb1.data.unityweb",
-            frameworkUrl: "https://cdn.jsdelivr.net/gh/bubbls/ruffle@04dd5345a30d6ebf4b0e2cc385568750cd56ed5a/0be3c3ee7115b26e1ae28e643afdf1f2.js.unityweb",
-            codeUrl: "https://cdn.jsdelivr.net/gh/bubbls/ruffle@04dd5345a30d6ebf4b0e2cc385568750cd56ed5a/b3397c29f6878557c1c614cbf9e196ea.wasm.unityweb",
-            streamingAssetsUrl: "StreamingAssets",
-            companyName: "Ericetto",
-            productName: "Ragdoll Archers",
-            productVersion: "0.1",
-        };
-
-        const container = document.querySelector("#unity-container");
-        const canvas = document.querySelector("#unity-canvas");
-        const loadingCover = document.querySelector("#loading-cover");
-        const progressBarEmpty = document.querySelector("#unity-progress-bar-empty");
-        const progressBarFull = document.querySelector("#unity-progress-bar-full");
-
-        if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
-            container.className = "unity-mobile";
-        }
-        
-        loadingCover.style.display = "";
-
-        const unityLoader = document.createElement("script");
-        unityLoader.src = loaderUrl;
-        unityLoader.onload = () => {
-            createUnityInstance(canvas, config, (progress) => {
-                progressBarEmpty.style.display = "";
-                progressBarFull.style.width = \`\${100 * progress}%\`;
-            }).then((unityInstance) => {
-                window.unityInstance = unityInstance;
-                loadingCover.style.display = "none";
-            }).catch((message) => {
-                alert(message);
-            });
-        };
-        document.body.appendChild(unityLoader);
-
-        document.addEventListener("pointerdown", () => {
-            container.focus();
-            window.focus();
-            canvas.focus();
-        });
-    <\/script>
-</body>
-</html>
-            `;
-            
-            iframe.srcdoc = gameHTML;
-            overlay.classList.add('active');
-        }
-
-        function closeRagdollArchers() {
-            document.getElementById('archers-overlay').classList.remove('active');
-            document.getElementById('archers-frame').srcdoc = '';
-        }
-
-        function openRooftopSnipers() {
-            const overlay = document.getElementById('rooftop-overlay');
-            const iframe = document.getElementById('rooftop-frame');
+        function openNeedForSpeed() {
+            const overlay = document.getElementById('nfs-overlay');
+            const iframe = document.getElementById('nfs-frame');
             
             const gameHTML = `
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rooftop Snipers</title>
-    <link href="https://cdn.jsdelivr.net/gh/lee2sman/everyday@d45d601d2c4d60adf809a0b677c00b7d12aba7e9/96/TemplateData/style.css" rel="stylesheet">
-    <style type="text/css">
-        body {
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-        }
-        #button {
-            display: none;
-        }
-        .imgb_vis {
-            animation: imgb-animation 7s linear;
-        }
-        @keyframes imgb-animation {
-            10% { transform: translateX(0); }
-            20% { transform: translateX(100px); }
-            90% { transform: translateX(100px); }
-            100% { transform: translateX(0); }
-        }
-    </style>
-</head>
-<body>
-    <script src="https://cdn.jsdelivr.net/gh/lee2sman/everyday@d45d601d2c4d60adf809a0b677c00b7d12aba7e9/96/TemplateData/UnityProgress.js"><\/script>
-    <script src="https://cdn.jsdelivr.net/gh/NovaAppsInc/fracital-proxy@808c643ed7924cfb696a68ccdd9d2b97c12a4bee/g/rooftop-snipers/UnityLoader.js"><\/script>
+    <script src="//www.google.com/jsapi"><\/script>
     <script>
-        var gameInstance = UnityLoader.instantiate("gameContainer", "https://cdn.jsdelivr.net/gh/NovaAppsInc/fracital-proxy@808c643ed7924cfb696a68ccdd9d2b97c12a4bee/g/rooftop-snipers/rooftop-snipers.json", {
-            onProgress: UnityProgress,
-            Module: {
-                onRuntimeInitialized: function() {
-                    UnityProgress(gameInstance, "complete");
-                }
-            }
-        });
+        if (window.parent && window.parent.maeExportApis_) {
+            window.parent.maeExportApis_();
+        }
     <\/script>
-    <div class="webgl-content">
-        <div id="gameContainer" style="width: 100vw; height: 100vh; padding: 0px; margin: 0px; border: 0px; position: relative; background: black;">
-            <canvas id="#canvas" style="width: 100%; height: 100%;"></canvas>
-            <div class="logo Dark"></div>
-            <div class="progress Dark">
-                <div class="empty" style="width: 10%;"></div>
-                <div class="full" style="width: 90%;"></div>
-            </div>
-        </div>
-    </div>
-</body>
-</html>
-            `;
-            
-            iframe.srcdoc = gameHTML;
-            overlay.classList.add('active');
-        }
-
-        function closeRooftopSnipers() {
-            document.getElementById('rooftop-overlay').classList.remove('active');
-            document.getElementById('rooftop-frame').srcdoc = '';
-        }
-
-        function openUndertaleYellow() {
-            const overlay = document.getElementById('undertale-overlay');
-            const iframe = document.getElementById('undertale-frame');
-            
-            // Due to the complexity of Undertale Yellow, we'll load it via direct URL
-            // This is a simplified approach for the web environment
-            const message = document.createElement('div');
-            message.style.cssText = 'position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(0,0,0,0.9); color: white; padding: 40px; border-radius: 15px; text-align: center; z-index: 10000; max-width: 500px;';
-            message.innerHTML = `
-                <h2 style="margin-bottom: 20px;">💛 Undertale Yellow</h2>
-                <p style="margin-bottom: 20px;">This game is very large and requires special loading. Preparing Emulator</p>
-                <div style="width: 100%; height: 4px; background: #333; border-radius: 2px; overflow: hidden;">
-                    <div id="uty-progress" style="width: 0%; height: 100%; background: #ffeb3b; transition: width 0.3s;"></div>
-                </div>
-            `;
-            document.body.appendChild(message);
-            
-            const progressBar = document.getElementById('uty-progress');
-            let progress = 0;
-            const progressInterval = setInterval(() => {
-                progress += Math.random() * 15;
-                if (progress > 90) progress = 90;
-                progressBar.style.width = progress + '%';
-            }, 300);
-            
-            // Create a simplified iframe with the essential Undertale Yellow code
-            setTimeout(() => {
-                progressBar.style.width = '100%';
-                setTimeout(() => {
-                    message.remove();
-                    
-                    const gameHTML = '<html><head><base href="https://cdn.jsdelivr.net/gh/1e295a49108e716ce8ab7eba0c8dca7d/9326265e4f1b14345a3bdab6f8ffad0e2e7ab3fda920c5f0f095f77359af00aeae22591c5bc4914c84c13d99eb62091d7ce7@main/utyweb/"><meta charset="utf-8"><title>UNDERTALE Yellow</title><link rel="stylesheet" href="uty.css"><script src="jszip.min.js"><\/script><\/head><body oncontextmenu="return false;"><div id="game-container"><canvas class="emscripten" id="canvas" tabindex="-1"><\/canvas><div class="loading"><div class="spinner" id="spinner"><\/div><div class="emscripten" id="status">Loading...<\/div><progress value="0" max="100" id="progress" hidden="1"><\/progress><\/div><\/div><script>alert("Loading Undertale Yellow... This may take a while!");function mergeFiles(e){return new Promise(((t,n)=>{let r=[];function s(o){if(o>=e.length){const e=new Blob(r,{type:"application/octet-stream"});return void t(e)}fetch(e[o]).then((e=>{if(!e.ok)throw new Error(`Failed to fetch ${e[o]}`);return e.arrayBuffer()})).then((e=>{r.push(e),s(o+1)})).catch(n)}s(0)}))}function getParts(e,t){let n=[];for(let r=1;r<=t;r++)n.push(`${e}.part${r}`);return n}mergeFiles(getParts("game.unx",10)).then((e=>{const t=URL.createObjectURL(e),n=window.fetch;window.fetch=async function(e,...r){return e.endsWith("game.unx")?n(t,...r):n(e,...r)};const r=XMLHttpRequest.prototype.open;XMLHttpRequest.prototype.open=function(e,n,...s){return n.includes("game.unx")&&(n=t),r.call(this,e,n,...s)};const s=document.createElement("script");s.src="runner.js",document.body.appendChild(s)})).catch((e=>console.error("Failed to merge parts:",e)));<\/script><\/body><\/html>';
-                    
-                    iframe.srcdoc = gameHTML;
-                    overlay.classList.add('active');
-                }, 500);
-            }, 2000);
-        }
-
-        function closeUndertaleYellow() {
-            document.getElementById('undertale-overlay').classList.remove('active');
-            document.getElementById('undertale-frame').srcdoc = '';
-        }
-
-        function openDeltarune() {
-            const overlay = document.getElementById('deltarune-overlay');
-            const iframe = document.getElementById('deltarune-frame');
-            
-            const gameHTML = `
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deltarune</title>
     <style>
         body {
+            overflow: hidden;
+            background: #000000;
             margin: 0;
             padding: 0;
-            background: black;
-            overflow: hidden;
+            color: #000000;
         }
-        #loading-message {
-            position: fixed;
+        #startButton {
+            display: block;
+            width: 200px;
+            height: 50px;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 20px auto;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-family: Arial, sans-serif;
+            box-shadow: 0px 0px 10px 2px #4CAF50;
+            position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            color: white;
-            font-family: Arial, sans-serif;
-            font-size: 20px;
-            text-align: center;
         }
-    </style>
-</head>
+        #startButton:hover {
+            background-color: #45a049;
+        }
+        #game {
+            width: 100vw;
+            height: 100vh;
+            max-width: 100%;
+        }
+    <\/style>
+<\/head>
 <body>
-    <div id="loading-message">Loading Deltarune... Please wait...</div>
+    <div style="width: 100vw; height: 100vh; max-width: 100%">
+        <div id="game" style="display: none;"><\/div>
+        <button id="startButton">PLAY NEED FOR SPEED</button>
+    <\/div>
     <script>
-        (function launch() {
-            try {
-                fetch("https://cdn.jsdelivr.net/gh/regedit-sys/web-port@main/deltarune/free.html?t=" + Date.now())
-                    .then(response => response.text())
-                    .then(html => {
-                        document.getElementById('loading-message').style.display = 'none';
-                        document.documentElement.innerHTML = html;
-                        
-                        document.documentElement.querySelectorAll('script').forEach(oldScript => {
-                            const newScript = document.createElement('script');
-                            if (oldScript.src) {
-                                newScript.src = oldScript.src;
-                            } else {
-                                newScript.textContent = oldScript.textContent;
-                            }
-                            document.body.appendChild(newScript);
-                        });
-                    })
-                    .catch(error => {
-                        console.error('Error loading Deltarune:', error);
-                        document.getElementById('loading-message').textContent = 'Failed to load Deltarune. Please try again.';
-                    });
-            } catch (error) {
-                console.error('Error:', error);
-                document.getElementById('loading-message').textContent = 'Failed to load Deltarune. Please try again.';
-            }
-        })();
-    <\/script>
-</body>
-</html>
-            `;
-            
-            iframe.srcdoc = gameHTML;
-            overlay.classList.add('active');
-        }
-
-        function closeDeltarune() {
-            document.getElementById('deltarune-overlay').classList.remove('active');
-            document.getElementById('deltarune-frame').srcdoc = '';
-        }
-
-        function openFlightSim() {
-            const overlay = document.getElementById('flight-overlay');
-            const iframe = document.getElementById('flight-frame');
-            
-            const gameHTML = `
-<!DOCTYPE html>
-<html lang="en-us">
-<head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NMNKZYDPP8"><\/script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-NMNKZYDPP8');
-    <\/script>
-    <meta charset="utf-8">
-    <base href="https://cdn.jsdelivr.net/gh/bubbls/UGS-Assets@main/flight%20sim/">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Flight Simulator</title>
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/style.css">
-    <script src="Build/UnityLoader.js"><\/script>
-    <script>
-        function mergeFiles(fileParts) {
-          return new Promise((resolve, reject) => {
-            let buffers = [];
-            function fetchPart(i) {
-              if (i >= fileParts.length) {
-                let mergedBlob = new Blob(buffers);
-                resolve(mergedBlob);
-                return;
-              }
-              fetch(fileParts[i])
-                .then(r => r.arrayBuffer())
-                .then(data => {
-                  buffers.push(data);
-                  fetchPart(i + 1);
-                })
-                .catch(reject);
-            }
-            fetchPart(0);
-          });
-        }
-
-        function getParts(file, start, end) {
-          let arr = [];
-          for (let i = start; i <= end; i++) {
-            arr.push(file + ".part" + i);
-          }
-          return arr;
-        }
-
-        function resizeUnityContainer() {
-          var container = document.getElementById("gameContainer");
-          if (container) {
-            container.style.width = window.innerWidth + "px";
-            container.style.height = window.innerHeight + "px";
-          }
-        }
-
-        window.addEventListener('resize', resizeUnityContainer);
-
-        function UnityProgress(gameInstance, progress) {
-          try {
-            if (progress === 'complete') {
-              return;
-            }
-            var pct = 0;
-            if (typeof progress === 'number') pct = progress;
-            else if (progress && progress.total && progress.loaded) pct = progress.loaded / progress.total;
-            var txt = document.getElementById('loading-text');
-            if (txt) txt.textContent = 'Loading... ' + Math.round(pct * 100) + '%';
-          } catch (e) {
-            console.error('Progress error:', e);
-          }
-        }
-
-        window.addEventListener("load", function () {
-          window.unityMergedFiles = {};
-          
-          Promise.all([
-            mergeFiles(getParts("Build/game.data.unityweb", 1, 2)),
-            mergeFiles(getParts("Build/game.asm.code.unityweb", 1, 1)), 
-            mergeFiles(getParts("Build/game.asm.memory.unityweb", 1, 1)),
-            mergeFiles(getParts("Build/game.asm.framework.unityweb", 1, 1))
-          ]).then(([dataBlob, wasmCodeBlob, wasmMemoryBlob, wasmFrameworkBlob]) => {
-            window.unityMergedFiles['Build/game.data.unityweb'] = URL.createObjectURL(dataBlob);
-            window.unityMergedFiles['Build/game.asm.code.unityweb'] = URL.createObjectURL(wasmCodeBlob);
-            window.unityMergedFiles['Build/game.asm.memory.unityweb'] = URL.createObjectURL(wasmMemoryBlob);
-            window.unityMergedFiles['Build/game.asm.framework.unityweb'] = URL.createObjectURL(wasmFrameworkBlob);
-            
-            console.log("Merged files ready:", Object.keys(window.unityMergedFiles));
-            
-            const originalFetch = window.fetch;
-            window.fetch = function(url, ...args) {
-              if (typeof url === 'string' && window.unityMergedFiles[url]) {
-                console.log("Redirecting fetch to merged file:", url);
-                return originalFetch(window.unityMergedFiles[url], ...args);
-              }
-              return originalFetch(url, ...args);
-            };
-            
-            const OriginalXHR = window.XMLHttpRequest;
-            window.XMLHttpRequest = function() {
-              const xhr = new OriginalXHR();
-              const originalOpen = xhr.open;
-              
-              xhr.open = function(method, url, ...args) {
-                if (typeof url === 'string' && window.unityMergedFiles[url]) {
-                  console.log("Redirecting XHR to merged file:", url);
-                  return originalOpen.call(this, method, window.unityMergedFiles[url], ...args);
-                }
-                return originalOpen.call(this, method, url, ...args);
-              };
-              
-              return xhr;
-            };
-            
-            window.gameInstance = UnityLoader.instantiate("gameContainer", "Build/game.json", {
-              onProgress: UnityProgress,
-              Module: {
-                onRuntimeInitialized: function () {
-                  resizeUnityContainer();
-                  let loadingText = document.querySelector("#loading-text");
-                  if (loadingText) loadingText.remove();
-                  UnityProgress(window.gameInstance, 'complete');
-                }
-              }
-            });
-          })
-          .catch(err => {
-            console.error("Unity load failed:", err);
-            let txt = document.getElementById('loading-text');
-            if (txt) txt.textContent = 'Loading failed: ' + err.message;
-          });
-        });
-    <\/script>
-</head>
-<body>
-    <div class="webgl-content">
-        <div id="gameContainer" style="width: 960px; height: 600px">
-            <p id="loading-text">Loading...</p>
-        </div>
-        <div class="footer">
-            <div class="webgl-logo"></div>
-            <div class="fullscreen" onclick="window.gameInstance && window.gameInstance.SetFullscreen(1)"></div>
-        </div>
-    </div>
-</body>
-</html>
-            `;
-            
-            iframe.srcdoc = gameHTML;
-            overlay.classList.add('active');
-        }
-
-        function closeFlightSim() {
-            document.getElementById('flight-overlay').classList.remove('active');
-            document.getElementById('flight-frame').srcdoc = '';
-        }
-
-        function openRagdollArchers() {
-            const overlay = document.getElementById('archers-overlay');
-            const iframe = document.getElementById('archers-frame');
-            
-            const gameHTML = `
-<!DOCTYPE html>
-<html lang="en-us">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>Ragdoll Archers</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bubbls/ruffle@04dd5345a30d6ebf4b0e2cc385568750cd56ed5a/styyyle.css">
-    <style>
-        #loading-status {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: white;
-            font-family: Arial, sans-serif;
-            font-size: 20px;
-            text-align: center;
-            z-index: 9999;
-        }
-    </style>
-</head>
-<body>
-    <div id="loading-status">Loading game scripts...</div>
-    <div id="unity-container" class="unity-desktop">
-        <canvas id="unity-canvas"></canvas>
-    </div>
-    <div id="loading-cover" style="display: none;">
-        <div id="unity-loading-bar">
-            <div id="unity-logo"><img src="logo.jpeg"></div>
-            <div class="progress-spinner-container">
-                <div class="spinner-left"><img src="spinner.png"></div>
-                <div id="unity-progress-bar-empty">
-                    <div id="unity-progress-bar-full"></div>
-                </div>
-                <div class="spinner-right"><img src="spinner.png"></div>
-            </div>
-        </div>
-    </div>
-    <script>
-        const loadingStatus = document.getElementById('loading-status');
-        const loadingCover = document.getElementById('loading-cover');
-        
-        // Load gameloader-helper first
-        const helperScript = document.createElement('script');
-        helperScript.src = "https://cdn.jsdelivr.net/gh/laparda14/Ragdoll-archers@62504c9570ea720c6367e7debe1e110c68f77c2d/vs/gameloader-helper.js";
-        helperScript.onload = () => {
-            loadingStatus.textContent = "Loading Unity loader...";
-            loadUnityLoader();
-        };
-        helperScript.onerror = () => {
-            loadingStatus.textContent = "Failed to load game helper. Retrying...";
-            setTimeout(() => document.head.appendChild(helperScript), 2000);
-        };
-        document.head.appendChild(helperScript);
-        
-        function loadUnityLoader() {
-            const loaderUrl = "https://cdn.jsdelivr.net/gh/bubbls/ruffle@7117cc5006472d782b65d96abd375597d6273242/v11121212.js";
-            const unityLoader = document.createElement("script");
-            unityLoader.src = loaderUrl;
-            unityLoader.onload = () => {
-                loadingStatus.style.display = "none";
-                loadingCover.style.display = "";
-                startGame();
-            };
-            unityLoader.onerror = () => {
-                loadingStatus.textContent = "Failed to load Unity. Retrying...";
-                setTimeout(() => document.body.appendChild(unityLoader), 2000);
-            };
-            document.body.appendChild(unityLoader);
-        }
+        document.getElementById("game").style.display = "none";
         
         function startGame() {
-            const config = {
-                dataUrl: "https://cdn.jsdelivr.net/gh/bubbls/ruffle@04dd5345a30d6ebf4b0e2cc385568750cd56ed5a/6697b6deba8b617c67b69c55dcd07cb1.data.unityweb",
-                frameworkUrl: "https://cdn.jsdelivr.net/gh/bubbls/ruffle@04dd5345a30d6ebf4b0e2cc385568750cd56ed5a/0be3c3ee7115b26e1ae28e643afdf1f2.js.unityweb",
-                codeUrl: "https://cdn.jsdelivr.net/gh/bubbls/ruffle@04dd5345a30d6ebf4b0e2cc385568750cd56ed5a/b3397c29f6878557c1c614cbf9e196ea.wasm.unityweb",
-                streamingAssetsUrl: "StreamingAssets",
-                companyName: "Ericetto",
-                productName: "Ragdoll Archers",
-                productVersion: "0.1",
-            };
-            
-            const container = document.querySelector("#unity-container");
-            const canvas = document.querySelector("#unity-canvas");
-            const progressBarEmpty = document.querySelector("#unity-progress-bar-empty");
-            const progressBarFull = document.querySelector("#unity-progress-bar-full");
-            
-            if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
-                container.className = "unity-mobile";
-            }
-            
-            createUnityInstance(canvas, config, (progress) => {
-                progressBarEmpty.style.display = "";
-                progressBarFull.style.width = \`\${100 * progress}%\`;
-            }).then((unityInstance) => {
-                window.unityInstance = unityInstance;
-                loadingCover.style.display = "none";
-            }).catch((message) => {
-                loadingCover.innerHTML = '<div style="color: white; text-align: center; padding: 20px;">Error loading game: ' + message + '</div>';
-            });
-            
-            document.addEventListener("pointerdown", () => {
-                container.focus();
-                window.focus();
-                canvas.focus();
-            });
+            document.getElementById("game").style.display = "block";
+            document.getElementById("startButton").style.display = "none";
+            window.EJS_player = "#game";
+            window.EJS_core = "gba";
+            window.EJS_color = "#000000";
+            window.EJS_startOnLoaded = true;
+            window.EJS_pathtodata = "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data";
+            window.EJS_gameUrl = "https://cdn.jsdelivr.net/gh/bubbls/UGS-file-encryption@e1e36e64e4eacc7d3d3cf0986eccffb6e50f4e02/Need%20for%20Speed%20-%20Most%20Wanted%20(USA%2C%20Europe)%20(En%2CFr%2CDe%2CIt).zip";
+            loadGame();
+        }
+        
+        document.getElementById("startButton").addEventListener("click", startGame);
+        
+        function loadGame() {
+            var script = document.createElement("script");
+            script.src = "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data/loader.js";
+            document.body.appendChild(script);
         }
     <\/script>
-</body>
-</html>
+<\/body>
+<\/html>
             `;
             
             iframe.srcdoc = gameHTML;
             overlay.classList.add('active');
         }
 
-        function closeRagdollArchers() {
-            document.getElementById('archers-overlay').classList.remove('active');
-            document.getElementById('archers-frame').srcdoc = '';
+        function closeNeedForSpeed() {
+            document.getElementById('nfs-overlay').classList.remove('active');
+            document.getElementById('nfs-frame').srcdoc = '';
         }
 
-        async function loadAndMergeZipParts() {
-            const PARTS_FOLDER = 'https://cdn.jsdelivr.net/gh/bubbls/dosbox/softs/fallout/';  
-            const BASE_FILENAME = 'fallout.zip';   
-            const NUM_PARTS = 23;
-
-            const progressEl = document.getElementById('fallout-progress');
-            const loadingEl = document.getElementById('fallout-loading');
+        function openNFSCarbon() {
+            const overlay = document.getElementById('nfs-carbon-overlay');
+            const iframe = document.getElementById('nfs-carbon-frame');
             
-            try {
-                const chunks = [];
-                
-                for (let i = 1; i <= NUM_PARTS; i++) {
-                    progressEl.textContent = `Loading part ${i}/${NUM_PARTS}...`;
-                    
-                    const partNum = i.toString().padStart(2, '0');
-                    const partUrl = `${PARTS_FOLDER}${BASE_FILENAME}.part${partNum}`;
-                    const response = await fetch(partUrl);
-                    
-                    if (!response.ok) {
-                        throw new Error(`Failed to load ${partUrl}: ${response.status}`);
-                    }
-                    
-                    const arrayBuffer = await response.arrayBuffer();
-                    chunks.push(arrayBuffer);
-                    
-                    const progress = Math.round((i / NUM_PARTS) * 100);
-                    progressEl.textContent = `Merging archive parts: ${progress}%`;
-                }
-                
-                progressEl.textContent = 'Merging complete! Starting emulator...';
-                const mergedBlob = new Blob(chunks, { type: 'application/zip' });
-                const blobUrl = URL.createObjectURL(mergedBlob);
-                
-                loadingEl.style.display = 'none';
-                document.getElementById('fallout-canvas').style.display = 'block';
-                
-                startEmulator(blobUrl);
-                
-            } catch (error) {
-                progressEl.textContent = `Error: ${error.message}`;
-                console.error('Failed to load game:', error);
-            }
+            const gameHTML = `
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="//www.google.com/jsapi"><\/script>
+    <script>
+        if (window.parent && window.parent.maeExportApis_) {
+            window.parent.maeExportApis_();
+        }
+    <\/script>
+    <style>
+        body {
+            overflow: hidden;
+            background: #000000;
+            margin: 0;
+            padding: 0;
+            color: #000000;
+        }
+        #startButton {
+            display: block;
+            width: 200px;
+            height: 50px;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 20px auto;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-family: Arial, sans-serif;
+            box-shadow: 0px 0px 10px 2px #4CAF50;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        #startButton:hover {
+            background-color: #45a049;
+        }
+        #game {
+            width: 100vw;
+            height: 100vh;
+            max-width: 100%;
+        }
+    <\/style>
+<\/head>
+<body>
+    <div style="width: 100vw; height: 100vh; max-width: 100%">
+        <div id="game" style="display: none;"><\/div>
+        <button id="startButton">PLAY NFS CARBON</button>
+    <\/div>
+    <script>
+        document.getElementById("game").style.display = "none";
+        
+        function startGame() {
+            document.getElementById("game").style.display = "block";
+            document.getElementById("startButton").style.display = "none";
+            window.EJS_player = "#game";
+            window.EJS_core = "gba";
+            window.EJS_color = "#000000";
+            window.EJS_startOnLoaded = true;
+            window.EJS_pathtodata = "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data";
+            window.EJS_gameUrl = "https://cdn.jsdelivr.net/gh/bubbls/UGS-file-encryption@e1e36e64e4eacc7d3d3cf0986eccffb6e50f4e02/Need%20for%20Speed%20-%20Carbon%20-%20Own%20the%20City%20(USA%2C%20Europe)%20(En%2CFr%2CDe%2CEs%2CIt).zip";
+            loadGame();
+        }
+        
+        document.getElementById("startButton").addEventListener("click", startGame);
+        
+        function loadGame() {
+            var script = document.createElement("script");
+            script.src = "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data/loader.js";
+            document.body.appendChild(script);
+        }
+    <\/script>
+<\/body>
+<\/html>
+            `;
+            
+            iframe.srcdoc = gameHTML;
+            overlay.classList.add('active');
         }
 
-        function startEmulator(zipUrl) {
-            var dosbox = new Emulator(document.querySelector("#fallout-canvas"),
-                null,
-                new DosBoxLoader(DosBoxLoader.emulatorJS("https://cdn.jsdelivr.net/gh/bubbls/dosbox/js/dosbox-sync.js"),
-                    DosBoxLoader.locateAdditionalEmulatorJS(locateAdditionalFiles),
-                    DosBoxLoader.nativeResolution(640, 400),
-                    DosBoxLoader.mountZip("c",
-                        DosBoxLoader.fetchFile("Software", zipUrl)),
-                    DosBoxLoader.startExe('FALLOUT/FALLOUT.EXE')));
-            dosbox.start({
-                waitAfterDownloading: false
-            });
+        function closeNFSCarbon() {
+            document.getElementById('nfs-carbon-overlay').classList.remove('active');
+            document.getElementById('nfs-carbon-frame').srcdoc = '';
+        }
 
-            function locateAdditionalFiles(filename) {
-                if (filename === "dosbox.html.mem") {
-                    return "https://cdn.jsdelivr.net/gh/bubbls/dosbox/js/dosbox-sync.mem";
+        function openNFSUnderground2() {
+            const overlay = document.getElementById('nfs-underground2-overlay');
+            const iframe = document.getElementById('nfs-underground2-frame');
+            
+            const gameHTML = `
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="//www.google.com/jsapi"><\/script>
+    <script>
+        if (window.parent && window.parent.maeExportApis_) {
+            window.parent.maeExportApis_();
+        }
+    <\/script>
+    <style>
+        body {
+            overflow: hidden;
+            background: #000000;
+            margin: 0;
+            padding: 0;
+            color: #000000;
+        }
+        #startButton {
+            display: block;
+            width: 220px;
+            height: 50px;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 20px auto;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-family: Arial, sans-serif;
+            box-shadow: 0px 0px 10px 2px #4CAF50;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        #startButton:hover {
+            background-color: #45a049;
+        }
+        #game {
+            width: 100vw;
+            height: 100vh;
+            max-width: 100%;
+        }
+    <\/style>
+<\/head>
+<body>
+    <div style="width: 100vw; height: 100vh; max-width: 100%">
+        <div id="game" style="display: none;"><\/div>
+        <button id="startButton">PLAY UNDERGROUND 2</button>
+    <\/div>
+    <script>
+        document.getElementById("game").style.display = "none";
+        
+        function startGame() {
+            document.getElementById("game").style.display = "block";
+            document.getElementById("startButton").style.display = "none";
+            window.EJS_player = "#game";
+            window.EJS_core = "gba";
+            window.EJS_color = "#000000";
+            window.EJS_startOnLoaded = true;
+            window.EJS_pathtodata = "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data";
+            window.EJS_gameUrl = "https://cdn.jsdelivr.net/gh/bubbls/UGS-file-encryption@e1e36e64e4eacc7d3d3cf0986eccffb6e50f4e02/Need%20for%20Speed%20-%20Underground%202%20(USA%2C%20Europe)%20(En%2CFr%2CDe%2CIt).zip";
+            loadGame();
+        }
+        
+        document.getElementById("startButton").addEventListener("click", startGame);
+        
+        function loadGame() {
+            var script = document.createElement("script");
+            script.src = "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data/loader.js";
+            document.body.appendChild(script);
+        }
+    <\/script>
+<\/body>
+<\/html>
+            `;
+            
+            iframe.srcdoc = gameHTML;
+            overlay.classList.add('active');
+        }
+
+        function closeNFSUnderground2() {
+            document.getElementById('nfs-underground2-overlay').classList.remove('active');
+            document.getElementById('nfs-underground2-frame').srcdoc = '';
+        }
+
+        function openAceCombat3() {
+            const overlay = document.getElementById('ace-combat-overlay');
+            const iframe = document.getElementById('ace-combat-frame');
+            
+            const gameHTML = `
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+      window.gameconfig = {
+        name: "Ace Combat 3 - Electrosphere (USA)",
+        url: "https://cdn.jsdelivr.net/gh/bubbls/ugss@6ae566604fe7593c3cd8e4fbb5b595b284b0537d/ace%20combat%203/Ace%20Combat%203%20-%20Electrosphere%20(USA).chd",
+        core: "psx",
+        min: 1,
+        max: 22,
+      };
+    <\/script>
+    <script>
+      function mergeFiles(fileParts, cb) {
+        return new Promise((resolve, reject) => {
+          let buffers = [];
+          function fetchPart(index) {
+            if (index >= fileParts.length) {
+              let mergedBlob = new Blob(buffers);
+              let mergedFileUrl = URL.createObjectURL(mergedBlob);
+              resolve(mergedFileUrl);
+              return;
+            }
+            fetch(fileParts[index])
+              .then((response) => response.arrayBuffer())
+              .then((data) => {
+                buffers.push(data);
+                fetchPart(index + 1);
+              })
+              .catch(reject);
+            cb(index);
+          }
+          fetchPart(0);
+        });
+      }
+      function getParts(file, start, end) {
+        let parts = [];
+        for (let i = start; i <= end; i++) {
+          let padded = String(i).padStart((end+"").length, '0');
+          parts.push(file + ".part" + padded);
+        }
+        return parts;
+      }
+    <\/script>
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        background-color: #121212;
+        color: white;
+        font-family: Arial, sans-serif;
+      }
+      #game-container {
+        text-align: center;
+        width: 100%;
+        height: 100%;
+      }
+      #loading-progress {
+        font-size: 18px;
+        margin-top: 20px;
+        padding: 10px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 8px;
+        display: inline-block;
+      }
+    <\/style>
+<\/head>
+<body>
+    <div id="game-container">
+      <div id="game"><\/div>
+      <div id="loading-progress">Loading: 0/0<\/div>
+      <div id="first-time">First-time loading may take longer...<\/div>
+    <\/div>
+    <script>
+      var parts = getParts(
+        window.gameconfig.url,
+        window.gameconfig.min,
+        window.gameconfig.max
+      );
+      var totalParts = parts.length;
+
+      function updateLoadingProgress(loaded) {
+        const progressElement = document.getElementById("loading-progress");
+        if (loaded === 0) {
+          progressElement.textContent = "Loading: 0/0";
+        } else {
+          progressElement.textContent = \`Loading: \${loaded}/\${totalParts}\`;
+        }
+      }
+
+      Promise.all([mergeFiles(parts, updateLoadingProgress)])
+        .then(([gameUrl]) => {
+          document.getElementById("loading-progress").remove();
+          document.getElementById("first-time").remove();
+          window.EJS_player = "#game";
+          window.EJS_core = window.gameconfig.core;
+          window.EJS_gameName = window.gameconfig.name;
+          window.EJS_color = "#0064ff";
+          window.EJS_startOnLoaded = true;
+          window.EJS_pathtodata = "https://cdn.jsdelivr.net/gh/genizy/emu@master/";
+          window.EJS_gameUrl = gameUrl;
+          window.EJS_biosUrl = "https://cdn.jsdelivr.net/gh/Abdess/retroarch_system@5f96368f6dbad5851cdb16a5041fefec4bdcd305/Sony%20-%20PlayStation/scph5501.bin";
+          const script = document.createElement("script");
+          script.src = "https://cdn.jsdelivr.net/gh/genizy/emu@master/loader.js";
+          document.body.appendChild(script);
+        })
+        .catch((error) => {
+          console.error(error);
+          document.getElementById("loading-progress").textContent = "Error loading game.";
+        });
+    <\/script>
+<\/body>
+<\/html>
+            `;
+            
+            iframe.srcdoc = gameHTML;
+            overlay.classList.add('active');
+        }
+
+        function closeAceCombat3() {
+            document.getElementById('ace-combat-overlay').classList.remove('active');
+            document.getElementById('ace-combat-frame').srcdoc = '';
+        }
+
+        function openAgesOfConflict() {
+            const overlay = document.getElementById('ages-conflict-overlay');
+            const iframe = document.getElementById('ages-conflict-frame');
+            
+            const gameHTML = `
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <base href="https://cdn.jsdelivr.net/gh/bubbls/UGS-Assets@main/ages%20of%20conflict/">
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Ages of Conflict</title>
+  <style>
+    html, body {
+      background: #000;
+      width: 100%;
+      height: 100%;
+      overflow: visible;
+      padding: 0;
+      margin: 0;
+    }
+    div#gameContainer {
+      background: transparent !important;
+      position: absolute;
+    }
+    div#gameContainer canvas {
+      position: absolute;
+    }
+    div#gameContainer canvas[data-pixel-art="true"] {
+      position: absolute;
+      image-rendering: optimizeSpeed;
+      image-rendering: -webkit-crisp-edges;
+      image-rendering: -moz-crisp-edges;
+      image-rendering: -o-crisp-edges;
+      image-rendering: crisp-edges;
+      image-rendering: -webkit-optimize-contrast;
+      image-rendering: optimize-contrast;
+      image-rendering: pixelated;
+      -ms-interpolation-mode: nearest-neighbor;
+    }
+  <\/style>
+<\/head>
+<body>
+  <div id="gameContainer">
+    <canvas id="unity-canvas" data-pixel-art=""><\/canvas>
+    <div id="loading-text" style="color: white; font-family: sans-serif; text-align: center; margin-top: 1em;">LOADING...<\/div>
+    <script src="https://cdn.jsdelivr.net/gh/bubbls/UGS-Assets@main/ages%20of%20conflict/Build/Web.loader.js"><\/script>
+    <script>
+      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+        var meta = document.createElement('meta');
+        meta.name = 'viewport';
+        meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
+        document.getElementsByTagName('head')[0].appendChild(meta);
+      }
+      const loadingText = document.querySelector("#loading-text");
+      let totalBytes = 0;
+      let loadedBytes = 0;
+
+      function formatSize(bytes) {
+        if (bytes > 1024 * 1024 * 1024) {
+          return (bytes / (1024 * 1024 * 1024)).toFixed(2) + " GB";
+        } else if (bytes > 1024 * 1024) {
+          return (bytes / (1024 * 1024)).toFixed(2) + " MB";
+        } else if (bytes > 1024) {
+          return (bytes / 1024).toFixed(2) + " KB";
+        } else {
+          return bytes + " B";
+        }
+      }
+
+      async function getSize(url) {
+        try {
+          const res = await fetch(url, { method: "HEAD" });
+          return parseInt(res.headers.get("Content-Length") || "0", 10);
+        } catch {
+          return 0;
+        }
+      }
+
+      async function fetchPart(url) {
+        const response = await fetch(url);
+        if (!response.body) {
+          const ab = await response.arrayBuffer();
+          loadedBytes += ab.byteLength;
+          loadingText.textContent = \`LOADING... \${formatSize(loadedBytes)} / \${formatSize(totalBytes)}\`;
+          return new Uint8Array(ab);
+        }
+        const reader = response.body.getReader();
+        const chunks = [];
+        let received = 0;
+        while (true) {
+          const { done, value } = await reader.read();
+          if (done) break;
+          received += value.length;
+          loadedBytes += value.length;
+          chunks.push(value);
+          const doneText = formatSize(loadedBytes);
+          const totalText = formatSize(totalBytes);
+          const percent = totalBytes > 0 ? ((loadedBytes / totalBytes) * 100).toFixed(1) : "?";
+          loadingText.textContent = \`LOADING... \${doneText} / \${totalText} (\${percent}%)\`;
+        }
+        const full = new Uint8Array(received);
+        let offset = 0;
+        for (let chunk of chunks) {
+          full.set(chunk, offset);
+          offset += chunk.length;
+        }
+        return full;
+      }
+
+      async function mergeParts(parts, mimeType) {
+        const buffers = await Promise.all(parts.map(fetchPart));
+        const totalLen = buffers.reduce((s, b) => s + b.length, 0);
+        const concatenated = new Uint8Array(totalLen);
+        let off = 0;
+        for (let b of buffers) {
+          concatenated.set(b, off);
+          off += b.length;
+        }
+        return URL.createObjectURL(new Blob([concatenated], { type: mimeType || undefined }));
+      }
+
+      function getParts(file, count) {
+        let parts = [];
+        for (let i = 1; i <= count; i++) {
+          parts.push(file + ".part" + i);
+        }
+        return parts;
+      }
+
+      (async () => {
+        try {
+          const dataParts = getParts("https://cdn.jsdelivr.net/gh/bubbls/UGS-Assets@main/ages%20of%20conflict/Build/Web.data.unityweb", 1);
+          const wasmParts = getParts("https://cdn.jsdelivr.net/gh/bubbls/UGS-Assets@main/ages%20of%20conflict/Build/Web.wasm.unityweb", 2);
+          const allParts = [...dataParts, ...wasmParts, "https://cdn.jsdelivr.net/gh/bubbls/UGS-Assets@main/ages%20of%20conflict/Build/Web.framework.js.unityweb"];
+          const sizes = await Promise.all(allParts.map(getSize));
+          totalBytes = sizes.reduce((a, b) => a + b, 0);
+
+          const [dataUrl, wasmUrl, frameworkUrl] = await Promise.all([
+            mergeParts(dataParts),
+            mergeParts(wasmParts),
+            mergeParts(["https://cdn.jsdelivr.net/gh/bubbls/UGS-Assets@main/ages%20of%20conflict/Build/Web.framework.js.unityweb"], 'application/javascript')
+          ]);
+
+          var canvas = document.querySelector("#unity-canvas");
+          var scaleToFit = true;
+
+          function onResize() {
+            var container = canvas.parentElement;
+            var w, h;
+            if (scaleToFit) {
+              w = window.innerWidth;
+              h = window.innerHeight;
+              var r = 540 / 960;
+              if (w * r > window.innerHeight) {
+                w = Math.min(w, Math.ceil(h / r));
+              }
+              h = Math.floor(w * r);
+            } else {
+              w = 960;
+              h = 540;
+            }
+            container.style.width = canvas.style.width = w + "px";
+            container.style.height = canvas.style.height = h + "px";
+            container.style.top = Math.floor((window.innerHeight - h) / 2) + "px";
+            container.style.left = Math.floor((window.innerWidth - w) / 2) + "px";
+            window.focus();
+          }
+          window.addEventListener('resize', onResize);
+          onResize();
+
+          await (async function waitForLoader() {
+            if (typeof createUnityInstance === 'function') return;
+            await new Promise(resolve => {
+              const check = setInterval(() => {
+                if (typeof createUnityInstance === 'function') {
+                  clearInterval(check);
+                  resolve();
                 }
-                return "https://cdn.jsdelivr.net/gh/bubbls/dosbox/js/" + filename;
+              }, 50);
+            });
+          })();
+
+          const config = {
+            dataUrl: dataUrl,
+            frameworkUrl: frameworkUrl,
+            codeUrl: wasmUrl,
+            streamingAssetsUrl: "StreamingAssets",
+            companyName: "",
+            productName: "",
+            productVersion: ""
+          };
+
+          createUnityInstance(canvas, config, function(progress) {
+            const percent = Math.round(progress * 100);
+            loadingText.textContent = \`LOADING... \${percent}%\`;
+          }).then(function(unityInstance) {
+            loadingText.remove();
+          }).catch(function(message) {
+            loadingText.textContent = 'Failed to start Unity: ' + message;
+            console.error(message);
+          });
+        } catch (err) {
+          loadingText.textContent = 'ERROR: ' + (err.message || err);
+          console.error(err);
+        }
+      })();
+    <\/script>
+  <\/div>
+<\/body>
+<\/html>
+            `;
+            
+            iframe.srcdoc = gameHTML;
+            overlay.classList.add('active');
+        }
+
+        function closeAgesOfConflict() {
+            document.getElementById('ages-conflict-overlay').classList.remove('active');
+            document.getElementById('ages-conflict-frame').srcdoc = '';
+        }
+
+        function openDecisionMedieval() {
+            const overlay = document.getElementById('decision-medieval-overlay');
+            const iframe = document.getElementById('decision-medieval-frame');
+            
+            const gameHTML = `
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Decision Medieval</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: black;
+      overflow: hidden;
+      height: 100%;
+      width: 100%;
+    }
+    #flash-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: black;
+      overflow: hidden;
+    }
+    .black-box {
+      position: fixed;
+      background: black;
+      z-index: 10;
+    }
+    #box-top {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 0;
+    }
+    #box-bottom {
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 0;
+    }
+    #box-left {
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+    }
+    #box-right {
+      top: 0;
+      right: 0;
+      width: 0;
+      height: 100%;
+    }
+    ruffle-player {
+      width: 100%;
+      height: 100%;
+      background: black;
+      display: block;
+    }
+  <\/style>
+  <script src="https://cdn.jsdelivr.net/npm/@ruffle-rs/ruffle@0.2.0-nightly.2025.10.2/ruffle.min.js"><\/script>
+<\/head>
+<body>
+  <div id="flash-container"><\/div>
+  <div class="black-box" id="box-top"><\/div>
+  <div class="black-box" id="box-bottom"><\/div>
+  <div class="black-box" id="box-left"><\/div>
+  <div class="black-box" id="box-right"><\/div>
+  <script>
+    const container = document.getElementById("flash-container");
+    const boxTop = document.getElementById("box-top");
+    const boxBottom = document.getElementById("box-bottom");
+    const boxLeft = document.getElementById("box-left");
+    const boxRight = document.getElementById("box-right");
+    
+    function resizeGame() {
+      const windowWidth = window.innerWidth;
+      const windowHeight = window.innerHeight;
+      const aspectRatio = 5.5 / 3;
+      
+      let width = Math.floor(windowWidth * 1);
+      let height = Math.floor(width / aspectRatio);
+      
+      if (height > windowHeight * 1) {
+        height = Math.floor(windowHeight * 1);
+        width = Math.floor(height * aspectRatio);
+      }
+      
+      container.style.width = \`\${width}px\`;
+      container.style.height = \`\${height}px\`;
+      
+      const topMargin = (windowHeight - height) / 2;
+      const leftMargin = (windowWidth - width) / 2;
+      
+      boxTop.style.height = \`\${topMargin}px\`;
+      boxBottom.style.height = \`\${topMargin}px\`;
+      boxLeft.style.width = \`\${leftMargin}px\`;
+      boxRight.style.width = \`\${leftMargin}px\`;
+    }
+    
+    window.addEventListener("resize", resizeGame);
+    window.addEventListener("DOMContentLoaded", () => {
+      resizeGame();
+      const ruffle = window.RufflePlayer?.newest() || window.RufflePlayer;
+      if (ruffle && container) {
+        const player = ruffle.createPlayer();
+        player.style.width = "100%";
+        player.style.height = "100%";
+        player.style.background = "black";
+        container.appendChild(player);
+        player.load("https://raw.githubusercontent.com/Stinkalistic/UGS/refs/heads/main/SWFs/decisionmedieval.swf");
+      } else {
+        container.textContent = "Ruffle failed to load."; 
+      }
+    });
+  <\/script>
+<\/body>
+<\/html>
+            `;
+            
+            iframe.srcdoc = gameHTML;
+            overlay.classList.add('active');
+        }
+
+        function closeDecisionMedieval() {
+            document.getElementById('decision-medieval-overlay').classList.remove('active');
+            document.getElementById('decision-medieval-frame').srcdoc = '';
+        }
+
+        function openEaglercraft() {
+            const overlay = document.getElementById('eaglercraft-overlay');
+            const iframe = document.getElementById('eaglercraft-frame');
+            
+            const gameHTML = `
+<!DOCTYPE html>
+<html>
+<head>
+  <title>EaglercraftX</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+    #game_frame {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #000;
+    }
+  <\/style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/bubbls/loltheygotbannedfromjsdelivr@38f40924ae70b843f3d4d0a5dc3d6ba13ca3a461/classes.min.js"><\/script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/bubbls/loltheygotbannedfromjsdelivr@38f40924ae70b843f3d4d0a5dc3d6ba13ca3a461/fix-webm-duration.js"><\/script>
+  <script type="text/javascript">
+    window.addEventListener('load', function () {
+      window.focus();
+      document.body.addEventListener('click', function (e) {
+        window.focus();
+      }, false);
+    });
+
+    window.addEventListener("load", () => {
+      if (document.location.href.startsWith("file:")) {
+        console.warn("HTTP required. Do not open this file locally, run it via a local HTTP server.");
+      } else {
+        if (!window.eaglercraftXOpts) {
+          window.eaglercraftXOpts = {
+            container: "game_frame",
+            assetsURI: "https://cdn.jsdelivr.net/gh/bubbls/loltheygotbannedfromjsdelivr@38f40924ae70b843f3d4d0a5dc3d6ba13ca3a461/assets.epk",
+            localesURI: "lang/",
+            servers: [
+              { addr: "wss://mc.arch.lol/", name: "ArchMC" },
+              { addr: "wss://mc.asspixel.net", name: "AssPixel" },
+              { addr: "wss://sus.shhnowisnottheti.me", name: "Ayunboom" },
+              { addr: "wss://aeon-network.net/1.8", name: "Aeon" },
+              { addr: "wss://zentic.org/", name: "Zentic" }
+            ]
+          };
+        }
+        let container = document.querySelector(\`#\${window.eaglercraftXOpts.container}\`);
+        if (!container) {
+          console.error("Container element not found. Creating a default one.");
+          container = document.createElement("div");
+          container.id = window.eaglercraftXOpts.container;
+          document.body.appendChild(container);
+        }
+        try {
+          main();
+        } catch (error) {
+          console.error("Error starting EaglercraftX:", error);
+        }
+      }
+    });
+  <\/script>
+<\/head>
+<body>
+  <div id="game_frame"><\/div>
+  <div class="_eaglercraftX_wrapper_element"><\/div>
+  <div id="_eaglercraftX_crashReason" style="display:none;"><\/div>
+  <div id="_eaglercraftX_crashUserAgent" style="display:none;"><\/div>
+<\/body>
+<\/html>
+            `;
+            
+            iframe.srcdoc = gameHTML;
+            overlay.classList.add('active');
+        }
+
+        function closeEaglercraft() {
+            document.getElementById('eaglercraft-overlay').classList.remove('active');
+            document.getElementById('eaglercraft-frame').srcdoc = '';
+        }
+
+        function openAboutBlank() {
+            const win = window.open('about:blank', '_blank');
+            if (win) {
+                win.document.write(`
+                    <!DOCTYPE html>
+                    <html>
+                    <head>
+                        <title>Vines</title>
+                        <style>
+                            body, html {
+                                margin: 0;
+                                padding: 0;
+                                width: 100%;
+                                height: 100%;
+                                overflow: hidden;
+                            }
+                            iframe {
+                                width: 100%;
+                                height: 100%;
+                                border: none;
+                            }
+                        </style>
+                    </head>
+                    <body>
+                        <iframe src="${window.location.href}"></iframe>
+                    </body>
+                    </html>
+                `);
+                win.document.close();
+            } else {
+                alert('Please allow pop-ups for this site to use about:blank cloaking');
             }
         }
     </script>
